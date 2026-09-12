@@ -1,5 +1,7 @@
 /* LinkedIn-ready portfolio additions */
 .hero .actions{flex-wrap:wrap}
+.hero-kicker::before{flex:0 0 7px}
+.brand-name small{text-transform:none}
 .secondary-work{margin-top:66px;padding-top:44px;border-top:1px solid var(--line)}
 .secondary-work-head{display:grid;grid-template-columns:.8fr 1.15fr 1fr;gap:30px;align-items:start;margin-bottom:28px}
 .secondary-work-head h3{font:normal 28px/1.16 var(--serif);letter-spacing:-.025em;max-width:520px}
@@ -12,3 +14,8 @@
 .secondary-card .text-link{margin-top:auto;align-self:flex-start}
 .degree.credential{border-top:1px solid var(--line);padding-top:20px;margin-top:4px}
 @media(max-width:850px){.secondary-work-head{grid-template-columns:1fr}.secondary-work-grid{grid-template-columns:1fr}.secondary-card{min-height:0}}
+@media(max-width:650px){
+  .hero-kicker{align-items:flex-start}
+  .hero-kicker::before{margin-top:4px}
+  .js-enabled .nav.is-open{min-height:calc(100dvh - 71px);overflow-y:auto;padding-bottom:max(32px,env(safe-area-inset-bottom))}
+}
